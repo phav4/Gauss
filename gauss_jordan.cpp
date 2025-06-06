@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void gaussJordan(vector<vector<double> > &augmented, int n)
+void gaussJordan(vector<vector<double>> &augmented, int n)
 {
     for (int i = 0; i < n; ++i)
     {
@@ -65,7 +65,7 @@ int main()
         return 1;
     }
 
-    vector<vector<double> > A(n, vector<double>(n));
+    vector<vector<double>> A(n, vector<double>(n));
     vector<double> b(n);
 
     cout << "\nEnter the " << n << "x" << n << " matrix A row by row:" << endl;
@@ -85,7 +85,7 @@ int main()
     }
 
     // Build augmented matrix: [A | I | b]
-    vector<vector<double> > augmented(n, vector<double>(2 * n + 1));
+    vector<vector<double>> augmented(n, vector<double>(2 * n + 1));
     for (int i = 0; i < n; ++i)
     {
         // Copy A

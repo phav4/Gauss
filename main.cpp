@@ -22,3 +22,7 @@ int main()
 
     return 0;
 }
+
+///  To run the program use the bellow comand
+///  g++ -o main main.cpp
+///  ./main
